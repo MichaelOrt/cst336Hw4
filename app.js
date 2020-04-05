@@ -1,7 +1,6 @@
 const express = require("express");
 const faker = require('faker')
 const app = express();
-const port = 3000
 
 
 app.use(express.static("public"));
@@ -33,6 +32,6 @@ app.get("/faker", function(req, res){
 	res.render('faker.ejs',{'info': info});
 });
 //process.env.PORT, process.env.IP
-app.listen(port, function(){
+app.listen(process.env.PORT, process.env.IP, function(){
    console.log("Running Express Server..."); 
 });
