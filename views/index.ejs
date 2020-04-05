@@ -1,0 +1,25 @@
+<%- include('partials/header'); -%>
+<%- include('partials/nav'); -%>
+ <div id="overview">
+    	<h1>What is cross-site scripting?</h1>
+    	<img id="cookieThief" src="./img/thief.jpg" alt="Cookie Monster">
+    	<p id="xss">
+    		Cross-site scripting (XSS) is a code injection attack that allows an attacker to execute malicious
+    		JavaScript in another user's browser.The attacker does not directly target his victim. Instead, he
+    		exploits a vulnerability in a website that the victim visits, in order to get the website to deliver
+    		the malicious JavaScript for him. To the victim's browser, the malicious JavaScript appears to be a
+    		legitimate part of the website, and the website has thus acted as an unintentional accomplice to the attacker.
+    	</p>
+        
+        <div id="references">
+            <h5>References</h5>
+            <ul>
+                <li><a href="https://excess-xss.com/" target="_blank">XSS</a></li>
+            </ul>
+        </div>
+    </div>
+<script>
+	$("#navHome").addClass("active");
+</script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<%- include('partials/header'); -%>
+<%- include('partials/nav'); -%>
+<div id="tips">
+    	<h1>How to prevent XSS?</h1>
+    	<img id="preventImg" src="./img/3-ways.jpg" alt="3 common practices logo">
+        <h1>Three common practices to prevent XSS</h1>
+        <h3>Escaping</h3>
+        <br>
+        <p class="types">
+            The first method is escaping the user's input. Escaping input means taking
+            the data and checking if it has characters that are used for scripts. We
+            are trying to get rid of those characters that way the script is not
+            able to run.
+        </p>
+        <br><br>
+        <h3>Validating Input</h3>
+        <p class="types">
+            In this case we believe that all input can be malicious. So we don't allow for user to be
+            able to use know character used inscripts. A lot of special characters are blacklisted.
+            This method is helpful because in case an attacker does find a vulnerability they wont be
+            able to be exploited. 
+        </p>
+        <br><br>
+        <h3>Sanaitizing</h3>
+        <p class="types">
+            Sanitizing is pretty much modifying the users input. Such as wrapping the input in single
+            or double quotes. Also we want to remove any illegal characters from the input.
+        </p>
+        <div id="references">
+            <h5>References</h5>
+            <ul>
+                <li><a href="https://www.checkmarx.com/2017/10/09/3-ways-prevent-xss/" target="_blank">How to prevent XSS</a></li>
+            </ul>
+        </div>
+    </div>
+<script>
+    $("#navPrevention").addClass("active");
+</script>
+</body>
+</html>

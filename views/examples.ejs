@@ -1,0 +1,21 @@
+<%- include('partials/header'); -%>
+<%- include('partials/nav'); -%>
+    <div id ="ex">
+        <figure>
+            <embed src="./img/greenXss.gif">
+            <embed src="./img/exp1.gif">
+        </figure>
+        <br>
+        <p id="explanation">
+            In these two examples the the attacker tested for XSS
+            in which the websites are vulnerable to XSS. The attacker inputted the script
+            once the user visits the website they prompted with a notification. reall
+            malicious, it's just testing for vulnerabilities. If a more malicious script was
+            run the attacker could've stole cookies and other information.
+        </p>
+    </div>
+<script>
+    $("#navExample").addClass("active");
+</script>
+</body>
+</html>

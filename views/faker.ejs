@@ -1,0 +1,28 @@
+<%- include('partials/header'); -%>
+<%- include('partials/nav'); -%>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <h2>Name:</h2>
+      <p> <%= info[0] %> </p>
+    </div>
+
+    <div class="col-sm-5">
+      <h3>Column 2</h3>
+     
+      <p><strong>Street Address: </strong><%= info[4] %></p>
+      <p><strong>City: </strong><%= info[2] %></p>
+      <p><strong>Zipcode: </strong><%= info[3] %></p>
+      <p><strong>County: </strong><%= info[5] %></p>
+      <p><strong>Country: </strong><%= info[6] %></p>
+    </div>
+
+  </div>
+</div>
+
+<script>
+	$("#navFaker").addClass("active");
+</script>
+</body>
+</html>

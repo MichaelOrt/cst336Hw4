@@ -1,0 +1,57 @@
+<%- include('partials/header'); -%>
+<%- include('partials/nav'); -%>
+    <div id="attacks">
+    	<h1>Types of Attacks</h1>
+    	<img id="attackImg" src="./img/Cross-Site-ScriptingXSS.png" alt="process of XSS attack">
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Stored XSS Attacks</th>
+                    <th>Reflected XSS Attacks</th>
+                    <th>DOM Based XSS</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        In stored XSS attacks, the attacker targets server.
+                        So the malicious script can be store in a database or
+                        cookie session. This happens when websites when websites that
+                        allow users to submit comments, feedback or contact form. The
+                        damage could range depending on the malicious script. The
+                        victims are the ones who visit the page and that's when the
+                        script runs.
+                    </td>
+                    <td>
+                        In this case a malicious script is sent to a web application.
+                        Which is then reflected back to the victims browser. Then the script is
+                        executed. Attackers embed the script into a link. Attackers trick victims
+                        into clicking the link by embedding them into emails, comment sections, and
+                        other similar forms So the victim has to click on this link in order for
+                        the attack to begin. 
+                    </td>
+                    <td>
+                        In this case the script runs on the client-side it is never sent to the server.
+                        The script is embedded into the page. Unlike the other attacks that the scripts
+                        have to be injected into page. In DOM based attacks the script is part of the page.
+                        Once the page loads the script is executed. 
+
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div id="references">
+            <h5>References</h5>
+            <ul>
+                <li><a href="https://www.imperva.com/learn/application-security/cross-site-scripting-xss-attacks/" target="_blank">Stored XSS</a></li>
+                <li><a href="https://guides.codepath.org/websecurity/Cross-Site-Scripting#reflected-xss" target="_blank">Reflected XSS</a></li>
+                <li><a href="https://owasp.org/www-community/attacks/DOM_Based_XSS" target="_blank">DOM XSS</a></li>
+            </ul>
+        </div>
+    </div>
+<script>
+    $("#navAttacks").addClass("active");
+</script>
+</body>
+</html>
